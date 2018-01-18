@@ -32,7 +32,7 @@ async function getRobloxEndpoint(ep, method, sendData) {
 
 async function getData(ep) {
     let res = await snekfetch.get(`${constants.APILocation}${(ep ? ep : constants.defaultEndpoint)}`);
-    return res.text;
+    return [res.text, res.status, res.statusText];
 }
 
 rest = testAPIStatus;

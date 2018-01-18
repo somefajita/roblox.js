@@ -1,5 +1,6 @@
 async function test() {
-    let api = await require('../src/index').RobloxClient();
-    console.log(api);
+    require('../src/index').RobloxClient().then(res => {
+        console.log(res)
+    })
 }
 test()
