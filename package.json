@@ -1,6 +1,6 @@
 {
   "name": "node-roblox",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A roblox API wrapper (ALPHA & UNOFFICIAL)",
   "main": "./src/index",
   "scripts": {
