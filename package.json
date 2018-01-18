@@ -1,0 +1,32 @@
+{
+  "name": "node-roblox",
+  "version": "0.0.1",
+  "description": "A roblox API wrapper (ALPHA & UNOFFICIAL)",
+  "main": "./src/index",
+  "scripts": {
+    "test": "node ./test/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/somefajita/roblox.js.git"
+  },
+  "keywords": [
+    "roblox",
+    "api",
+    "wrapper",
+    "alpha",
+    "unofficial"
+  ],
+  "author": "Jay Slevin // Anime Catgirl#5613",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/somefajita/roblox.js/issues"
+  },
+  "homepage": "https://github.com/somefajita/roblox.js#readme",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "snekfetch": "^3.6.1"
+  }
+}
