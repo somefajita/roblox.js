@@ -27,11 +27,16 @@ async function getRobloxEndpoint(ep, method, sendData) {
 /*
  *
  * **Gets** a specified endpoint.
+ * qArr is optional, specifies a query endpoint e.g. '/users/get-by-username?username=someUsername'
  * 
  */
 
-async function getData(ep) {
-    let res = await snekfetch.get(`${constants.APILocation}${(ep ? ep : constants.defaultEndpoint)}`);
+async function getData(ep, qArr) {
+    if(!qArr) {
+        let res = await snekfetch.get(`${constants.APILocation}${(ep ? ep : constants.defaultEndpoint)}`);
+        return [res.text, res.status, res.statusText];
+    }
+    let res = await snekfetch.get(`${constants.APILocation}${(ep ? ep : constants.defaultEndpoint)}`).query(qArr[0], qArr[1]);
     return [res.text, res.status, res.statusText];
 }
 

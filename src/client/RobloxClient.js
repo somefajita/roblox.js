@@ -24,7 +24,7 @@ async function getUserByID(id) {
 
 async function getUserByUsername(un) {
     if(!un) throw new Error('INVALID_USERNAME');
-    return rest.getData(`/users/get-by-username?username=${un}`);
+    return rest.getData(`/users/get-by-username`, ['username', un]);
 }
 
 let roblox = baseClient;

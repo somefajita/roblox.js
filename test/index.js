@@ -1,5 +1,5 @@
 async function test() {
-    require('../src/index').RobloxClient().then(res => {
+    require('../src/index').RobloxClient.getUserByUsername('roblox').then(res => {
         console.log(res)
     })
 }
